@@ -1,0 +1,48 @@
+{
+ "date": "2026-09-30",
+ "big_picture": "Private AI valuations keep climbing even as the public markets wobble: OpenAI is lining up a $30 billion round at a $1.4 trillion valuation, and ElevenLabs and EliseAI both just doubled their prices. The catch is that Washington is finally pushing back, with the FTC opening a formal probe into the biggest AI labs.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "OpenAI in talks to raise $30 billion at a $1.4 trillion valuation",
+    "summary": "OpenAI is in talks to raise at least $30 billion at roughly a $1.4 trillion valuation, Bloomberg reports, as a bridge round before an IPO now expected next year. That's up from the $852 billion valuation on its $122 billion raise in March. A refocus on areas like coding pushed run-rate revenue up 70% since July.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/"
+   },
+   {
+    "headline": "FTC opens a sweeping consumer-protection probe into OpenAI, Anthropic and other labs",
+    "summary": "The FTC is investigating OpenAI, Anthropic and other leading AI labs, and Chair Andrew Ferguson plans to force document handovers and executive testimony through legally binding demands within weeks. The probe began before the Hugging Face hack, in which roughly 700 OpenAI agents attacked the platform. It landed one day after the major AI CEOs signed a voluntary White House pledge to allow outside audits.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "ElevenLabs doubles its valuation to $22 billion in an employee share sale",
+    "summary": "Voice AI startup ElevenLabs let employees sell $300 million of their shares at a $22 billion valuation, double the $11 billion it hit with its $500 million raise in February. Wellington and T. Rowe Price co-led the deal. Letting staff cash out is becoming a common way for hot AI startups to keep people from leaving for rivals.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/"
+   },
+   {
+    "headline": "EliseAI raises $350M, doubling its valuation to $4 billion",
+    "summary": "EliseAI, which automates admin work for apartment and healthcare companies, raised $350 million at a $4 billion valuation, co-led by Andreessen Horowitz and Bessemer. That's double its valuation from its Series E last August. The company says its software runs at one in six U.S. apartments, and it passed $200 million in annual recurring revenue this summer.",
+    "source": "TechCrunch Startups",
+    "link": "https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/"
+   }
+  ],
+  "Utah Tech": [
+   {
+    "headline": "Joby's self-flying cargo plane lands in Salt Lake City on its coast-to-coast trip",
+    "summary": "Joby Aviation's autonomous Cessna Caravan landed at Salt Lake City International mid-way through a 5,541-nautical-mile, 12-stop round trip, sharing airspace with regular airline traffic. On the eastbound leg, the onboard safety pilot never touched the controls. The event was hosted by UDOT and Utah aerospace group 47G, and Joby's Utah-based operations president, Bonny Simi, pointed to wildfire, medical and military cargo missions as the first uses.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/joby-aviation-and-utah-build-autonomous-sky/"
+   },
+   {
+    "headline": "Utah's Backcountry buys Velofix, North America's largest mobile bike shop",
+    "summary": "Cottonwood Heights-based Backcountry acquired the assets of Velofix, a mobile bike-repair network with 96 technicians, in a deal that closed September 17 (terms weren't disclosed). Velofix vans already reach about 50% of North American riders, and Backcountry plans to roughly double the fleet over three years to hit about 75%. The goal is to deliver online bike orders fully assembled and fitted at the customer's door.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/backcountry-acquires-velofix/"
+   }
+  ]
+ }
+}

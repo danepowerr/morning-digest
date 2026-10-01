@@ -1,0 +1,32 @@
+[
+ {
+  "company": "Hello Haven",
+  "city": "Park City",
+  "round": "Pre-seed",
+  "amount": "$15M",
+  "lead": "Mayfield",
+  "about": "Personal AI \"digital twin\" assistant",
+  "announced": "2026-09-17",
+  "link": "https://www.prnewswire.com/news-releases/hello-haven-launches-with-a-personal-ai-digital-twin-and-15-million-funding-302881418.html"
+ },
+ {
+  "company": "Fortem Technologies",
+  "city": "Lindon",
+  "round": "Series B",
+  "amount": "$50M",
+  "lead": "Lockheed Martin",
+  "about": "Counter-drone radar, software and interceptor drones",
+  "announced": "2026-09-30",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONTdGc3I5NGVUUlRadFpqdmJGZktHOEl3aWVrWlZqaWhibkp2N0laZVNRcjMyb3l4UUNVMnY3eTk4NkpTM1NkQ2VGVUFScmdWd3VyWjdxUWV1b05WMzNNN1prMXpWa19WOGNDNTdTTjRKNWhvMzd3MHFzRGdhcFcxdVRlcWI3OHJfRWVGQ1ZmU0wxV0prdkJ3cU0xdFlRcnBubmFqdGgwQXNVYjRkMkgwSWtwNklfaDdPblkteWdsa080amJJU3JfUTRkZ0U?oc=5"
+ },
+ {
+  "company": "Freyya",
+  "city": "Salt Lake City",
+  "round": "Pre-seed",
+  "amount": "",
+  "lead": "Alamo Angels",
+  "about": "Wearable sensor for women's pelvic floor health",
+  "announced": "2026-09-29",
+  "link": "https://utah.vc/p/freyya-closes-pre-seed"
+ }
+]

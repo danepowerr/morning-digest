@@ -1,0 +1,35 @@
+{
+ "date": "2026-09-28",
+ "big_picture": "Money is still pouring into AI agents: one startup's valuation quadrupled to $10 billion in about a month. At the same time, pressure on the big labs is growing, with Florida asking a court to halt ChatGPT development and Anthropic and OpenAI fighting over enterprise pricing.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Florida asks a court to put ChatGPT development on emergency hold",
+    "summary": "Florida Attorney General James Uthmeier asked for an emergency injunction against OpenAI. He argues the company can't properly control its own technology, and he cites reports that OpenAI and Anthropic are investigating tens of thousands of model safety incidents. The motion builds on a lawsuit Florida filed in June and also accuses OpenAI of collecting data from children under 13 without parental consent.",
+    "source": "Axios",
+    "link": "https://www.axios.com/2026/09/28/florida-openai-chatgpt-injunction-uthmeier"
+   },
+   {
+    "headline": "Anthropic's hard line on discounts gives OpenAI an opening with businesses",
+    "summary": "Both Anthropic and OpenAI give discounts to business customers who commit to spending millions of dollars a year. Anthropic, though, ends those discounts once a customer uses up the tokens in its contract, according to managers at three software firms that buy from both. Those customers then have to negotiate a new deal or pay more, and OpenAI is winning them over by being more flexible.",
+    "source": "The Information",
+    "link": "https://www.theinformation.com/articles/anthropic-openai-fighting-enterprise-spending"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "AI assistant Instinct raises $1B at a $10B valuation, a month after its last round",
+    "summary": "Instinct raised a $1 billion Series C from investors including Sequoia, Benchmark and Coatue, valuing it at $10 billion. Just a month ago its valuation was $2.5 billion. The company only launched its invite-only agent in August 2026, and it now faces direct competition from Meta's Muse assistant.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/"
+   },
+   {
+    "headline": "Maritime data startup Quartermaster raises $140M, months after its Series A",
+    "summary": "Arlington, Virginia-based Quartermaster closed a $140 million Series B that Insight Partners preempted. About $100 million is equity and $40 million is a debt facility from Stifel. It comes just months after a $43 million Series A in May. The startup's ship-mounted 'SmartMast' sensors are now on more than 650 vessels in 25 countries, and demand has grown as the war in Iran has disrupted shipping.",
+    "source": "TechCrunch Startups",
+    "link": "https://techcrunch.com/2026/09/28/maritime-intelligence-startup-quartermaster-raises-another-140m/"
+   }
+  ],
+  "Utah Tech": []
+ }
+}

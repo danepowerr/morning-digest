@@ -1,0 +1,35 @@
+{
+ "date": "2026-10-01",
+ "big_picture": "The fight over who gets to use frontier AI, and who gets to copy it, is heating up: Anthropic is going around its Pentagon ban to sell Claude to civilian agencies, while OpenAI says a group tied to China's Moonshot AI tried to steal its models' hidden reasoning. On the startup side, investors are still writing checks for unglamorous-but-real businesses, from home sales to satellite software.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Anthropic launches Claude for Government for civilian agencies amid its Pentagon fight",
+    "summary": "Anthropic is now offering Claude for Government to U.S. federal and state agencies, running in a FedRAMP High environment, the strictest U.S. cloud security level. It's aimed at civilian agencies because the Pentagon labeled Anthropic a supply chain risk in March after it refused to drop its bans on mass surveillance and autonomous weapons. Courts have split on that designation, and agencies will pay for what they use, with fixed spending caps.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/anthropic-brings-claude-to-civilian-agencies-as-its-fight-with-the-pentagon-drags-on/"
+   },
+   {
+    "headline": "OpenAI says Moonshot-linked accounts tried to steal its models' hidden reasoning",
+    "summary": "OpenAI says it shut down a network of more than 15,000 accounts that tried to copy its models' hidden reasoning, a technique called distillation, and tied a core group to people associated with China's Moonshot AI. Activity spiked to 16,000 requests on July 24\u201325 before OpenAI stopped it by July 28. But researchers found the same attack still worked on Microsoft Azure until late September, showing that a model is only as protected as the weakest cloud selling access to it.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/openai-says-it-stopped-a-campaign-to-steal-its-models-reasoning-but-the-trick-still-worked-on-azure/"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "Homeward raises $120M Series D to help people buy before they sell",
+    "summary": "Austin-based Homeward raised a $120 million Series D led by Saluda Grade, with Citi Ventures, Magnetar, Norwest and others joining, plus a $330 million debt facility to fund home purchases. Its valuation is roughly flat with its 2021 Series C, when it was reported just north of $800 million. A 2023 pivot into cash offers helped it more than quadruple revenue since 2021 even as U.S. home sales fell about 30%.",
+    "source": "Crunchbase News",
+    "link": "https://news.crunchbase.com/real-estate-property-tech/startup-homeward-raises-120m-buy-sell-homes-ai-financing/"
+   },
+   {
+    "headline": "Satlyt raises $8M seed to run AI on other companies' satellites",
+    "summary": "Satlyt, founded by a former Google and SpaceX product manager, raised an $8 million seed round led by Houston's Non Sibi Ventures. Instead of building spacecraft, it makes software that lets AI models run on many companies' satellites, pitching itself as the open \"Android\" to SpaceX's closed \"iPhone.\" Its software launches Thursday on a SpaceX rocket, with NASA among the paying customers.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/"
+   }
+  ],
+  "Utah Tech": []
+ }
+}

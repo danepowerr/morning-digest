@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utah Startup Roles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #faf8f4;
+    --card: #ffffff;
+    --ink: #1c1b19;
+    --muted: #6d6a64;
+    --rule: #e4dfd6;
+    --accent: #b4532a;
+    --accent-soft: #f6e6dc;
+    --good: #2f7d4f;
+    --good-soft: #e1f0e6;
+    --bar: #d9cfc1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161514;
+      --card: #1e1c1a;
+      --ink: #ece8e1;
+      --muted: #9a958c;
+      --rule: #2e2c29;
+      --accent: #e08a5e;
+      --accent-soft: #3a2519;
+      --good: #6cc494;
+      --good-soft: #1b3326;
+      --bar: #4a443d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 14px/1.5 "Inter", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 44px 20px 80px; }
+  a { color: inherit; }
+
+  header {
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;
+    padding-bottom: 20px; border-bottom: 1px solid var(--ink);
+  }
+  .kicker { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  h1 { font: 400 40px/1.05 "Newsreader", Georgia, serif; margin: 10px 0 6px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .back { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 13px; }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+  .stat { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; }
+  .stat .n { font: 600 28px/1.1 "Newsreader", Georgia, serif; }
+  .stat .l { color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; align-items: start; }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+  .chip {
+    border: 1px solid var(--rule); background: var(--card); color: var(--ink);
+    padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .controls input[type=search], .controls select {
+    font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid var(--rule); background: var(--card); color: var(--ink);
+  }
+  .controls input[type=search] { flex: 1; min-width: 160px; }
+  .toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); cursor: pointer; padding: 0 4px; }
+
+  .list { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; }
+  .job {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px;
+    padding: 14px 18px; border-bottom: 1px solid var(--rule); text-decoration: none;
+  }
+  .job:last-child { border-bottom: 0; }
+  .job:hover { background: var(--paper); }
+  .job .title { font-weight: 600; font-size: 15px; }
+  .job .where { color: var(--muted); font-size: 13px; }
+  .job .where b { color: var(--ink); font-weight: 500; }
+  .job .right { text-align: right; white-space: nowrap; font-size: 12px; color: var(--muted); grid-row: span 2; align-self: center; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag { font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 999px; background: var(--paper); border: 1px solid var(--rule); color: var(--muted); }
+  .tag.new { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+  .tag.early { background: var(--good-soft); border-color: transparent; color: var(--good); }
+  .empty { padding: 40px 18px; text-align: center; color: var(--muted); }
+
+  aside { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; position: sticky; top: 20px; }
+  aside h2 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 4px; }
+  aside .note { color: var(--muted); font-size: 12px; margin: 0 0 14px; }
+  .co { display: grid; grid-template-columns: 92px 1fr 54px; gap: 8px; align-items: center; margin: 7px 0; font-size: 12px; cursor: pointer; }
+  .co:hover .name { color: var(--accent); }
+  .co .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .co .track { height: 8px; background: var(--paper); border-radius: 4px; overflow: hidden; }
+  .co .fill { height: 100%; background: var(--bar); border-radius: 4px; }
+  .co .fill .rel { height: 100%; background: var(--accent); border-radius: 4px; }
+  .co .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+  .co .up { color: var(--good); }
+  .co .down { color: var(--accent); }
+  .legend { display: flex; gap: 14px; margin-top: 14px; font-size: 11px; color: var(--muted); }
+  .legend i { display: inline-block; width: 10px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; }
+    aside { position: static; order: -1; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 28px 16px 60px; }
+    h1 { font-size: 32px; }
+    .job { grid-template-columns: 1fr; }
+    .job .right { grid-row: auto; text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="kicker">Jobs Dashboard</div>
+      <h1>Utah Startup Roles</h1>
+      <div class="sub" id="updated"></div>
+    </div>
+    <a class="back" href="latest.html">← Morning Brief</a>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="layout">
+    <main>
+      <div class="filters" id="chips"></div>
+      <div class="controls">
+        <input type="search" id="q" placeholder="Search titles…">
+        <select id="company"><option value="">All companies</option></select>
+        <label class="toggle"><input type="checkbox" id="early"> Early career</label>
+        <label class="toggle"><input type="checkbox" id="fresh"> New only</label>
+      </div>
+      <div class="list" id="list"></div>
+    </main>
+
+    <aside>
+      <h2>Who's hiring</h2>
+      <p class="note">Total open roles per company, all departments. The number after each bar is the 30-day change once there's history.</p>
+      <div id="cos"></div>
+      <div class="legend"><span><i style="background:var(--bar)"></i>All roles</span><span><i style="background:var(--accent)"></i>Fits you</span></div>
+    </aside>
+  </div>
+</div>
+
+<script>
+const DATA = {{DATA}};
+const DAY = 86400000;
+const now = Date.now();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// "New" = we first spotted it in the last 7 days (after tracking began),
+// or the company's own posting date is in the last 7 days.
+for (const j of DATA.jobs) {
+  const firstSeen = new Date(j.first_seen + "T12:00:00");
+  const posted = j.posted ? new Date(j.posted) : null;
+  j.isNew = (j.first_seen > DATA.baseline && now - firstSeen < 7 * DAY) || (posted && now - posted < 7 * DAY);
+  j.age = posted ? Math.floor((now - posted) / DAY) : null;
+}
+
+const state = { cat: "", q: "", company: "", early: false, fresh: false };
+
+function ago(days) {
+  if (days == null) return "";
+  if (days <= 0) return "today";
+  if (days === 1) return "1 day ago";
+  if (days < 30) return days + " days ago";
+  const m = Math.round(days / 30);
+  return m === 1 ? "1 month ago" : m + " months ago";
+}
+
+function renderStats() {
+  const j = DATA.jobs;
+  const stats = [
+    [j.length, "roles that fit you"],
+    [j.filter(x => x.isNew).length, "new this week"],
+    [j.filter(x => x.early).length, "early-career"],
+    [new Set(j.map(x => x.company)).size, `of ${DATA.companies.length} companies have a fit`],
+  ];
+  document.getElementById("stats").innerHTML = stats.map(([n, l]) =>
+    `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+  document.getElementById("updated").textContent = "Updated " + DATA.generated;
+}
+
+function renderChips() {
+  const cats = ["", ...DATA.categories];
+  document.getElementById("chips").innerHTML = cats.map(c => {
+    const n = DATA.jobs.filter(j => !c || j.category === c).length;
+    return `<button class="chip" data-cat="${esc(c)}" aria-pressed="${state.cat === c}">${esc(c || "All")} · ${n}</button>`;
+  }).join("");
+}
+
+function renderList() {
+  const q = state.q.toLowerCase();
+  const rows = DATA.jobs.filter(j =>
+    (!state.cat || j.category === state.cat) &&
+    (!state.company || j.company === state.company) &&
+    (!state.early || j.early) &&
+    (!state.fresh || j.isNew) &&
+    (!q || (j.title + " " + j.company).toLowerCase().includes(q)));
+  document.getElementById("list").innerHTML = rows.length ? rows.map(j => `
+    <a class="job" href="${esc(j.url)}" target="_blank" rel="noopener">
+      <div class="title">${esc(j.title)}</div>
+      <div class="right">${ago(j.age)}</div>
+      <div>
+        <div class="where"><b>${esc(j.company)}</b> · ${esc(j.location)}</div>
+        <div class="tags">
+          ${j.isNew ? '<span class="tag new">New</span>' : ""}
+          ${j.early ? '<span class="tag early">Early career</span>' : ""}
+          <span class="tag">${esc(j.category)}</span>
+        </div>
+      </div>
+    </a>`).join("") : `<div class="empty">No roles match these filters.</div>`;
+}
+
+function renderCompanies() {
+  const max = Math.max(...DATA.companies.map(c => c.open), 1);
+  document.getElementById("cos").innerHTML = DATA.companies.map(c => {
+    let delta = "";
+    if (c.change != null) delta = c.change > 0 ? `<span class="up">+${c.change}</span>` : c.change < 0 ? `<span class="down">${c.change}</span>` : "±0";
+    return `<div class="co" data-co="${esc(c.name)}" title="${c.open} open · ${c.relevant} fit you">
+      <span class="name">${esc(c.name)}</span>
+      <div class="track"><div class="fill" style="width:${c.open / max * 100}%">
+        <div class="rel" style="width:${c.open ? c.relevant / c.open * 100 : 0}%"></div></div></div>
+      <span class="num">${c.open} ${delta}</span>
+    </div>`;
+  }).join("");
+  const sel = document.getElementById("company");
+  for (const c of [...DATA.companies].sort((a, b) => a.name.localeCompare(b.name)))
+    sel.insertAdjacentHTML("beforeend", `<option>${esc(c.name)}</option>`);
+}
+
+document.getElementById("chips").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  state.cat = b.dataset.cat; renderChips(); renderList();
+});
+document.getElementById("cos").addEventListener("click", e => {
+  const r = e.target.closest(".co"); if (!r) return;
+  state.company = state.company === r.dataset.co ? "" : r.dataset.co;
+  document.getElementById("company").value = state.company; renderList();
+});
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; renderList(); });
+document.getElementById("company").addEventListener("change", e => { state.company = e.target.value; renderList(); });
+document.getElementById("early").addEventListener("change", e => { state.early = e.target.checked; renderList(); });
+document.getElementById("fresh").addEventListener("change", e => { state.fresh = e.target.checked; renderList(); });
+
+renderStats(); renderChips(); renderCompanies(); renderList();
+</script>
+</body>
+</html>

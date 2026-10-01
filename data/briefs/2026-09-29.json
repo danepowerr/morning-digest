@@ -1,0 +1,48 @@
+{
+ "date": "2026-09-29",
+ "big_picture": "The AI giants are opening their books ahead of IPOs, and the numbers are staggering: Anthropic's prospectus shows twelvefold revenue growth alongside an $8 billion operating loss, while OpenAI's run rate nears $70 billion. Meanwhile, the money is flowing down the stack, with inference startup Modal tripling its valuation and AMD paying $8.2 billion for Fei-Fei Li's World Labs.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Anthropic's IPO filing reveals 12x revenue growth and an $8 billion operating loss",
+    "summary": "Anthropic's S-1 shows 2025 revenue grew twelvefold to nearly $4.6 billion, while its operating loss widened to $8.06 billion and compute spending tripled to $7.33 billion. Two customers made up nearly a quarter of revenue, and the company has $518 billion in future cloud and compute commitments. Backers are eyeing a valuation above $2 trillion, with the listing likely coming in November after the midterms.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/"
+   },
+   {
+    "headline": "OpenAI's annual revenue run rate nears $70 billion as enterprise sales double",
+    "summary": "OpenAI's annualized revenue has grown more than 70% since the start of the third quarter to almost $70 billion, according to Axios sources, with business revenue up more than 100% over the same stretch. It also added more consumer revenue in Q3 than in all of 2025. The numbers show OpenAI catching up to Anthropic in enterprise as both prepare to go public, though its expenses weren't disclosed.",
+    "source": "Axios",
+    "link": "https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "Modal Labs nears $750M raise at a $15.75B valuation, led by Accel",
+    "summary": "AI inference provider Modal Labs is closing in on a $750 million round led by Accel at a $15.75 billion valuation, more than triple the $4.65 billion it hit just four months ago. The New York startup has about 150 employees and passed $300 million in annualized revenue in May. Rivals like Baseten (reportedly at $26 billion) are also raising at sharply higher prices as demand for running AI models soars.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/"
+   },
+   {
+    "headline": "AMD buys Fei-Fei Li's two-year-old World Labs for $8.2 billion",
+    "summary": "AMD is acquiring World Labs, which builds 'world models' that simulate 3D physical spaces, for $8.2 billion, and founder Fei-Fei Li will become AMD's EVP and chief scientist. The deal helps AMD compete with Nvidia, which already offers its own world models, and targets demand for synthetic training data for robots. It's expected to close by year-end, pending regulatory approval.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
+   }
+  ],
+  "Utah Tech": [
+   {
+    "headline": "Provo's NestSTEPS turns home down-payment savings into an employer benefit",
+    "summary": "Provo-based NestSTEPS runs a 401(k)-style program where employers match employee savings toward a home, typically contributing $3,000 to $10,000 per worker, plus 1:1 financial coaching. After launching with 11 employers, it's partnering with regional PEOs and benefits brokers to roll out to several hundred Intermountain West businesses in early 2027. Co-founder Larry Salazar is a BYU grad.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/neststeps-turns-homeownership-into-an-enterprise-benefit/"
+   },
+   {
+    "headline": "Utah State alum launches Walk Farm, a farming game powered by your steps",
+    "summary": "Smithfield developer Jared Lambert launched Walk Farm on iOS and Android, where every 100 real-world steps earns one unit of in-game farm energy, so running a full farm takes about 10,000 steps a day. The game skips addictive ad loops, with optional $1-$2 purchases instead. It's early: about 75 active users two weeks after launch, all through word of mouth.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/walk-farm-app-launch/"
+   }
+  ]
+ }
+}

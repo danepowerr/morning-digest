@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #faf8f4;
+    --surface: #ffffff;
+    --sunk: #f3f0ea;
+    --ink: #1c1b19;
+    --muted: #6d6a64;
+    --faint: #9b978f;
+    --rule: #e6e1d8;
+    --accent: #b4532a;
+    --accent-soft: #f6e6dc;
+    --good: #2f7d4f;
+    --good-soft: #e1f0e6;
+    --utah: #b4532a;
+    --bay: #2f5f9e;
+    --bay-soft: #e3ebf6;
+    --shadow: 0 1px 2px rgba(28,27,25,.04), 0 4px 16px rgba(28,27,25,.05);
+    --cup: #ffffff;
+    --cup-line: #1c1b19;
+    --coffee: #6b3f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151413;
+      --surface: #1d1b19;
+      --sunk: #232120;
+      --ink: #ece8e1;
+      --muted: #a09b92;
+      --faint: #77736c;
+      --rule: #2f2c29;
+      --accent: #e08a5e;
+      --accent-soft: #3a2519;
+      --good: #6cc494;
+      --good-soft: #1b3326;
+      --utah: #e08a5e;
+      --bay: #86aee3;
+      --bay-soft: #1c2940;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+      --cup: #2a2724;
+      --cup-line: #ece8e1;
+      --coffee: #9a6440;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 15px/1.55 "Inter", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .serif { font-family: "Newsreader", Georgia, serif; }
+
+  /* ── Top bar ─────────────────────────────────────────── */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--paper) 86%, transparent);
+    backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-in { max-width: 1160px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; gap: 20px; }
+  .brand { font: 600 19px/1 "Newsreader", Georgia, serif; text-decoration: none; letter-spacing: -.01em; white-space: nowrap; }
+  .brand i { color: var(--accent); font-style: normal; }
+  .tabs { display: flex; gap: 4px; }
+  .tabs a {
+    text-decoration: none; font-size: 13px; font-weight: 500; color: var(--muted);
+    padding: 6px 12px; border-radius: 8px; white-space: nowrap;
+  }
+  .tabs a:hover { color: var(--ink); background: var(--sunk); }
+  .tabs a.on { color: var(--ink); background: var(--sunk); }
+  .tabs .n { color: var(--faint); font-weight: 400; margin-left: 4px; }
+  .topbar .when { margin-left: auto; font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+  /* ── Brief ───────────────────────────────────────────── */
+  .brief { max-width: 680px; margin: 0 auto; padding: 56px 20px 24px; }
+  .masthead { text-align: center; padding-bottom: 26px; border-bottom: 1px solid var(--ink); }
+  .kicker { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  .masthead h1 { font: 400 50px/1.02 "Newsreader", Georgia, serif; margin: 14px 0 12px; letter-spacing: -.015em; }
+  .dateline { font-size: 13px; color: var(--muted); }
+  .dateline b { font-weight: 500; color: var(--ink); }
+  .jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin-top: 16px; font-size: 12px; }
+  .jump a { color: var(--muted); text-decoration: none; }
+  .jump a:hover { color: var(--accent); }
+  .big-picture {
+    margin: 30px 0 4px; padding: 20px 24px; background: var(--sunk); border-left: 3px solid var(--accent);
+    font: italic 18px/1.6 "Newsreader", Georgia, serif;
+  }
+  .brief-section { margin-top: 44px; }
+  .brief-section h2 {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+    margin: 0 0 4px; padding-bottom: 10px; border-bottom: 1px solid var(--rule);
+  }
+  .brief-section .count { color: var(--faint); font-weight: 400; letter-spacing: 0; }
+  .story { padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  .story:last-child { border-bottom: 0; }
+  .story h3 { font: 600 21px/1.3 "Newsreader", Georgia, serif; margin: 0 0 8px; }
+  .story h3 a { text-decoration: none; }
+  .story h3 a:hover { color: var(--accent); }
+  .story p { font: 17px/1.65 "Newsreader", Georgia, serif; margin: 0 0 8px; }
+  .meta { font-size: 12px; color: var(--muted); }
+  .empty-brief { text-align: center; color: var(--muted); padding: 40px 0; }
+  table.raises { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 14px; }
+  table.raises th { text-align: left; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); padding: 10px 8px 8px 0; border-bottom: 1px solid var(--rule); }
+  table.raises td { padding: 14px 8px 14px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.raises tr:last-child td { border-bottom: 0; }
+  table.raises a { text-decoration: none; }
+  table.raises a:hover b { color: var(--accent); }
+  .r-about, .r-lead { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .round { font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .r-amt { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .r-date { color: var(--muted); white-space: nowrap; font-size: 13px; text-align: right; }
+  table.raises th:last-child { text-align: right; }
+  .raises-none { color: var(--muted); text-align: center; padding: 26px 0 !important; }
+
+  /* ── Roles ───────────────────────────────────────────── */
+  .roles-wrap { border-top: 1px solid var(--rule); margin-top: 48px; background: var(--sunk); }
+  .roles { max-width: 1160px; margin: 0 auto; padding: 56px 20px 96px; }
+  .roles-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+  .roles-head h2 { font: 400 38px/1.05 "Newsreader", Georgia, serif; margin: 10px 0 6px; letter-spacing: -.01em; }
+  .roles-head .sub { color: var(--muted); font-size: 13px; }
+
+  .seg { display: inline-flex; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 3px; }
+  .seg button {
+    font: inherit; font-size: 13px; font-weight: 500; color: var(--muted); background: none; border: 0;
+    padding: 6px 14px; border-radius: 7px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 20px; }
+  .stat { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .stat .v { font: 600 30px/1.05 "Newsreader", Georgia, serif; font-variant-numeric: tabular-nums; }
+  .stat .l { color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font: inherit; font-size: 12.5px; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--rule); padding: 5px 11px; border-radius: 999px; cursor: pointer;
+  }
+  .chip .c { color: var(--faint); margin-left: 3px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chip[aria-pressed="true"] .c { color: inherit; opacity: .7; }
+  .tools-right { margin-left: auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .search {
+    font: inherit; font-size: 13px; padding: 7px 11px; width: 200px; border-radius: 8px;
+    border: 1px solid var(--rule); background: var(--surface); color: var(--ink);
+  }
+  .toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); cursor: pointer; white-space: nowrap; }
+  .toggle input { accent-color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+  .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    text-align: left; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--faint); padding: 12px 16px; border-bottom: 1px solid var(--rule); background: var(--surface);
+  }
+  tbody tr { border-bottom: 1px solid var(--rule); cursor: pointer; transition: background .12s; }
+  tbody tr:last-child { border-bottom: 0; }
+  tbody tr:hover { background: var(--sunk); }
+  td { padding: 13px 16px; vertical-align: top; }
+  .role a { font-weight: 600; text-decoration: none; }
+  .role a:hover { color: var(--accent); }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 5px; }
+  .tag { font-size: 11px; font-weight: 500; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+  .tag.new { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+  .tag.early { background: var(--good-soft); border-color: transparent; color: var(--good); }
+  .co { display: flex; gap: 10px; align-items: center; }
+  .av {
+    flex: none; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center;
+    font-size: 12px; font-weight: 600; color: #fff;
+  }
+  .co .nm { font-weight: 500; }
+  .co .ab { font-size: 12px; color: var(--muted); line-height: 1.35; }
+  .loc { font-size: 13px; color: var(--muted); }
+  .region { display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 2px; }
+  .region.utah { color: var(--utah); }
+  .region.bay { color: var(--bay); }
+  .posted { font-size: 12.5px; color: var(--muted); white-space: nowrap; text-align: right; }
+  .none { padding: 48px 20px; text-align: center; color: var(--muted); }
+
+  aside.panel { position: sticky; top: 72px; }
+  .aside-head { padding: 16px 16px 10px; }
+  .aside-head h3 { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin: 0; }
+  .aside-head p { font-size: 12px; color: var(--muted); margin: 4px 0 0; }
+  .cos { max-height: 560px; overflow: auto; padding: 0 8px 10px; }
+  .cos h4 { font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 12px 8px 4px; }
+  .corow {
+    display: grid; grid-template-columns: 26px 1fr auto; gap: 10px; align-items: center;
+    padding: 7px 8px; border-radius: 8px; cursor: pointer; width: 100%;
+    font: inherit; text-align: left; background: none; border: 0; color: inherit;
+  }
+  .corow:hover { background: var(--sunk); }
+  .corow[aria-pressed="true"] { background: var(--accent-soft); }
+  .corow .av { width: 26px; height: 26px; font-size: 11px; border-radius: 7px; }
+  .corow .nm { font-size: 13px; font-weight: 500; line-height: 1.2; }
+  .corow .ab { font-size: 11.5px; color: var(--muted); line-height: 1.25; }
+  .corow .ct { font-size: 12px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; line-height: 1.25; }
+  .corow .ct b { color: var(--ink); font-weight: 600; }
+  .up { color: var(--good); } .down { color: var(--accent); }
+
+  footer { max-width: 1160px; margin: 0 auto; padding: 0 20px 40px; color: var(--faint); font-size: 12px; }
+
+  /* ── Coffee cup ──────────────────────────────────────── */
+  .barista { position: fixed; right: 22px; bottom: 22px; z-index: 30; }
+  .cup-btn {
+    width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--rule);
+    background: var(--surface); box-shadow: var(--shadow); cursor: pointer; padding: 0;
+    display: grid; place-items: center; transition: transform .2s;
+  }
+  .cup-btn:hover { transform: translateY(-2px); }
+  .cup-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .cup-btn svg { overflow: visible; }
+  .cup-body { transform-origin: 30px 44px; transition: transform .35s cubic-bezier(.3,1.4,.5,1); }
+  .sipping .cup-body { transform: rotate(-22deg) translate(-2px, -4px); }
+  .coffee-level { transition: transform .6s ease; transform-origin: 0 43px; }
+  .steam path { fill: none; stroke: var(--faint); stroke-width: 2; stroke-linecap: round; opacity: 0; animation: steam 3.2s ease-in-out infinite; }
+  .steam path:nth-child(2) { animation-delay: 1.05s; }
+  .steam path:nth-child(3) { animation-delay: 2.1s; }
+  .empty .steam path { animation: none; opacity: 0; }
+  @keyframes steam {
+    0%   { opacity: 0; transform: translateY(6px) scaleY(.7); }
+    25%  { opacity: .8; }
+    100% { opacity: 0; transform: translateY(-14px) scaleY(1.1); }
+  }
+  .bubble {
+    position: absolute; right: 0; bottom: 84px; width: max-content; max-width: 240px;
+    background: var(--ink); color: var(--paper); font-size: 13px; line-height: 1.4;
+    padding: 10px 13px; border-radius: 12px 12px 4px 12px; box-shadow: var(--shadow);
+    opacity: 0; transform: translateY(6px) scale(.97); transform-origin: bottom right;
+    transition: opacity .2s, transform .2s; pointer-events: none;
+  }
+  .bubble.show { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .steam path { animation: none; opacity: .5; }
+    .cup-body, .coffee-level, .bubble, .cup-btn { transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ── Small screens ───────────────────────────────────── */
+  @media (max-width: 960px) {
+    .grid { grid-template-columns: 1fr; }
+    aside.panel { position: static; }
+    .cos { max-height: 240px; }
+  }
+  @media (max-width: 720px) {
+    .topbar .when { display: none; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .masthead h1 { font-size: 38px; }
+    .brief { padding-top: 36px; }
+    .roles { padding-top: 40px; }
+    .tools-right { margin-left: 0; width: 100%; }
+    .search { flex: 1; width: auto; }
+    thead { display: none; }
+    tbody tr { display: grid; grid-template-columns: 1fr auto; padding: 12px 14px; gap: 6px 10px; }
+    td { padding: 0; }
+    td.role { grid-column: 1 / -1; }
+    td.company { grid-column: 1; }
+    td.posted { grid-column: 2; align-self: center; }
+    td.where { grid-column: 1 / -1; }
+    .barista { right: 14px; bottom: 14px; }
+    .cup-btn { width: 60px; height: 60px; }
+  }
+  @media (max-width: 420px) {
+    .brand span { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">Morning <i>Brief</i></a>
+    <div class="tabs">
+      <a href="#brief" data-tab="brief" class="on">Brief<span class="n">{{STORY_COUNT}}</span></a>
+      <a href="#roles" data-tab="roles">Roles<span class="n" id="tabRoles"></span></a>
+    </div>
+    <div class="when">{{DATE_LONG}}</div>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="brief" id="brief">
+    <header class="masthead">
+      <div class="kicker">AI Startups · Fast Growers · Utah Tech</div>
+      <h1>The Morning Brief</h1>
+      <div class="dateline"><b>{{DATE_LONG}}</b> &nbsp;·&nbsp; {{STORY_COUNT}} stories &nbsp;·&nbsp; {{READ_MINUTES}} min read</div>
+      <nav class="jump">{{SECTION_LINKS}}</nav>
+    </header>
+    <div class="big-picture">{{BIG_PICTURE}}</div>
+{{SECTIONS}}
+  </section>
+
+  <div class="roles-wrap">
+    <section class="roles" id="roles">
+      <div class="roles-head">
+        <div>
+          <div class="kicker">Startup Roles</div>
+          <h2>Where to apply</h2>
+          <div class="sub" id="rolesSub"></div>
+        </div>
+        <div class="seg" id="regionSeg" role="group" aria-label="Region">
+          <button data-region="" aria-pressed="true">All</button>
+          <button data-region="Utah" aria-pressed="false">Utah</button>
+          <button data-region="Bay Area" aria-pressed="false">Bay Area</button>
+        </div>
+      </div>
+
+      <div class="stats" id="stats"></div>
+
+      <div class="toolbar">
+        <div class="chips" id="chips"></div>
+        <div class="tools-right">
+          <label class="toggle"><input type="checkbox" id="early"> Entry-level only</label>
+          <label class="toggle"><input type="checkbox" id="fresh"> New only</label>
+          <input class="search" type="search" id="q" placeholder="Search roles or companies…">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <table>
+            <thead><tr><th>Role</th><th>Company</th><th>Location</th><th style="text-align:right">Posted</th></tr></thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <aside class="panel">
+          <div class="aside-head">
+            <h3>Startups tracked</h3>
+            <p>Open roles · roles that fit you. Click one to filter.</p>
+          </div>
+          <div class="cos" id="cos"></div>
+        </aside>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>Summaries written by Claude from each source article. Roles pulled from each company's public job board.</footer>
+
+<div class="barista" id="barista">
+  <div class="bubble" id="bubble" role="status" aria-live="polite"></div>
+  <button class="cup-btn" id="cup" aria-label="Coffee — click for a morning tip">
+    <svg width="46" height="46" viewBox="0 0 60 60" aria-hidden="true">
+      <g class="steam">
+        <path d="M22 16 q-3 -4 0 -8 q3 -4 0 -8" />
+        <path d="M30 16 q-3 -4 0 -8 q3 -4 0 -8" />
+        <path d="M38 16 q-3 -4 0 -8 q3 -4 0 -8" />
+      </g>
+      <ellipse cx="30" cy="53" rx="22" ry="4" fill="var(--sunk)" stroke="var(--cup-line)" stroke-width="1.6"/>
+      <g class="cup-body">
+        <path d="M45 26 h3 a6 6 0 0 1 0 12 h-4" fill="none" stroke="var(--cup-line)" stroke-width="2.4"/>
+        <clipPath id="cupClip"><path d="M12 21 h36 l-3 22 a8 8 0 0 1 -8 7 h-14 a8 8 0 0 1 -8 -7 z"/></clipPath>
+        <path d="M12 21 h36 l-3 22 a8 8 0 0 1 -8 7 h-14 a8 8 0 0 1 -8 -7 z" fill="var(--cup)"/>
+        <g clip-path="url(#cupClip)">
+          <rect class="coffee-level" id="coffee" x="8" y="23" width="44" height="30" fill="var(--coffee)"/>
+        </g>
+        <path d="M12 21 h36 l-3 22 a8 8 0 0 1 -8 7 h-14 a8 8 0 0 1 -8 -7 z" fill="none" stroke="var(--cup-line)" stroke-width="2.4" stroke-linejoin="round"/>
+      </g>
+    </svg>
+  </button>
+</div>
+
+<script>
+const DATA = {{JOBS_DATA}};
+const DAY = 86400000, now = Date.now();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// ── Jobs data prep ─────────────────────────────────────────
+const about = Object.fromEntries(DATA.companies.map(c => [c.name, c.about]));
+for (const j of DATA.jobs) {
+  const firstSeen = new Date(j.first_seen + "T12:00:00");
+  const posted = j.posted ? new Date(j.posted) : firstSeen;
+  j.age = Math.max(0, Math.floor((now - posted) / DAY));
+  j.isNew = (j.appeared_since_tracking && now - firstSeen < 7 * DAY) || (j.posted && now - new Date(j.posted) < 7 * DAY);
+}
+
+// A calm, consistent color per company for its monogram.
+const HUES = ["#b4532a", "#2f5f9e", "#2f7d4f", "#7a4fa0", "#a0782a", "#2a8a8a", "#9e3d5c", "#556070"];
+const colorFor = name => HUES[[...name].reduce((a, c) => a + c.charCodeAt(0), 0) % HUES.length];
+const monogram = name => name.split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+const avatar = name => `<span class="av" style="background:${colorFor(name)}">${esc(monogram(name))}</span>`;
+
+const state = { region: "", cat: "", company: "", q: "", early: false, fresh: false };
+
+function ago(d) {
+  if (d <= 0) return "Today";
+  if (d === 1) return "1d ago";
+  if (d < 30) return d + "d ago";
+  return Math.round(d / 30) + "mo ago";
+}
+
+const inRegion = j => !state.region || j.region === state.region;
+function visible() {
+  const q = state.q.toLowerCase();
+  return DATA.jobs.filter(j => inRegion(j) &&
+    (!state.cat || j.category === state.cat) &&
+    (!state.company || j.company === state.company) &&
+    (!state.early || j.early) && (!state.fresh || j.isNew) &&
+    (!q || (j.title + " " + j.company).toLowerCase().includes(q)));
+}
+
+function renderStats() {
+  const pool = DATA.jobs.filter(inRegion);
+  const cos = DATA.companies.filter(c => !state.region || c.region === state.region);
+  const stats = [
+    [pool.length, "undergrad-friendly roles"],
+    [pool.filter(j => j.isNew).length, "new this week"],
+    [pool.filter(j => j.early).length, "explicitly entry-level"],
+    [cos.length, "startups tracked"],
+  ];
+  document.getElementById("stats").innerHTML = stats.map(([v, l]) =>
+    `<div class="stat"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+}
+
+function renderChips() {
+  const pool = DATA.jobs.filter(inRegion);
+  document.getElementById("chips").innerHTML = ["", ...DATA.categories].map(c =>
+    `<button class="chip" data-cat="${esc(c)}" aria-pressed="${state.cat === c}">${esc(c || "All roles")}<span class="c">${pool.filter(j => !c || j.category === c).length}</span></button>`
+  ).join("");
+}
+
+function renderRows() {
+  const rows = visible();
+  document.getElementById("rows").innerHTML = rows.length ? rows.map(j => `
+    <tr data-url="${esc(j.url)}">
+      <td class="role">
+        <a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
+        <div class="tags">
+          ${j.isNew ? '<span class="tag new">New</span>' : ""}
+          <span class="tag${j.early ? " early" : ""}">${esc(j.experience || "")}</span>
+          <span class="tag">${esc(j.category)}</span>
+        </div>
+      </td>
+      <td class="company"><div class="co">${avatar(j.company)}<div><div class="nm">${esc(j.company)}</div><div class="ab">${esc(about[j.company] || "")}</div></div></div></td>
+      <td class="where"><div class="region ${j.region === "Utah" ? "utah" : "bay"}">${esc(j.region)}</div><div class="loc">${esc(j.location)}</div></td>
+      <td class="posted">${ago(j.age)}</td>
+    </tr>`).join("")
+    : `<tr><td colspan="4" class="none">No roles match these filters right now. Small startups post in bursts, so check back tomorrow.</td></tr>`;
+}
+
+function renderCompanies() {
+  const groups = ["Utah", "Bay Area"].filter(r => !state.region || r === state.region);
+  document.getElementById("cos").innerHTML = groups.map(r => {
+    const list = DATA.companies.filter(c => c.region === r).sort((a, b) => b.relevant - a.relevant || b.open - a.open);
+    return `<h4>${r}</h4>` + list.map(c => {
+      const trend = c.change == null ? "" : c.change > 0 ? ` <span class="up">▲${c.change}</span>` : c.change < 0 ? ` <span class="down">▼${-c.change}</span>` : "";
+      return `<button class="corow" data-co="${esc(c.name)}" aria-pressed="${state.company === c.name}">
+        ${avatar(c.name)}
+        <span><div class="nm">${esc(c.name)}</div><div class="ab">${esc(c.about)}</div></span>
+        <span class="ct"><b>${c.open}</b> open${trend}<br>${c.relevant} fit</span>
+      </button>`;
+    }).join("");
+  }).join("");
+}
+
+function renderAll() { renderStats(); renderChips(); renderRows(); renderCompanies(); }
+
+document.getElementById("regionSeg").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.region = b.dataset.region; state.company = "";
+  document.querySelectorAll("#regionSeg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  renderAll();
+});
+document.getElementById("chips").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  state.cat = b.dataset.cat; renderChips(); renderRows();
+});
+document.getElementById("cos").addEventListener("click", e => {
+  const b = e.target.closest(".corow"); if (!b) return;
+  state.company = state.company === b.dataset.co ? "" : b.dataset.co;
+  renderRows(); renderCompanies();
+});
+document.getElementById("rows").addEventListener("click", e => {
+  if (e.target.closest("a")) return;
+  const tr = e.target.closest("tr[data-url]"); if (tr) window.open(tr.dataset.url, "_blank", "noopener");
+});
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; renderRows(); });
+document.getElementById("early").addEventListener("change", e => { state.early = e.target.checked; renderRows(); });
+document.getElementById("fresh").addEventListener("change", e => { state.fresh = e.target.checked; renderRows(); });
+
+document.getElementById("tabRoles").textContent = DATA.jobs.length;
+document.getElementById("rolesSub").textContent = DATA.updated
+  ? "Roles at young Utah and Bay Area startups that don't require prior work experience · updated " + new Date(DATA.updated).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" })
+  : "Roles at young Utah and Bay Area startups that don't require prior work experience";
+renderAll();
+
+// Highlight the tab for whichever part of the page you're reading.
+const tabs = document.querySelectorAll(".tabs a");
+new IntersectionObserver(entries => {
+  for (const en of entries) if (en.isIntersecting)
+    tabs.forEach(t => t.classList.toggle("on", t.dataset.tab === en.target.id));
+}, { rootMargin: "-45% 0px -50% 0px" }).observe(document.getElementById("brief"));
+new IntersectionObserver(entries => {
+  for (const en of entries) if (en.isIntersecting)
+    tabs.forEach(t => t.classList.toggle("on", t.dataset.tab === en.target.id));
+}, { rootMargin: "-45% 0px -50% 0px" }).observe(document.getElementById("roles"));
+
+// ── Coffee cup ─────────────────────────────────────────────
+const cup = document.getElementById("cup"), barista = document.getElementById("barista");
+const bubble = document.getElementById("bubble"), coffee = document.getElementById("coffee");
+let sips = 0, hideTimer;
+const FULL = 5;  // sips per cup
+
+function say(text, ms = 3800) {
+  bubble.textContent = text; bubble.classList.add("show");
+  clearTimeout(hideTimer); hideTimer = setTimeout(() => bubble.classList.remove("show"), ms);
+}
+
+function marketLine() {
+  // Minutes until the NYSE opens (9:30am New York time), or whether it's open.
+  const ny = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+  const day = ny.getDay(), mins = ny.getHours() * 60 + ny.getMinutes();
+  if (day === 0 || day === 6) return "Markets are closed today. Enjoy the slow morning.";
+  if (mins < 570) { const m = 570 - mins; return `Markets open in ${Math.floor(m / 60)}h ${m % 60}m.`; }
+  if (mins < 960) return "The market's open. Bell rang at 9:30 ET.";
+  return "Markets have closed for the day.";
+}
+
+function lines() {
+  const hour = new Date().getHours();
+  const hi = hour < 12 ? "Good morning, Dane" : hour < 17 ? "Good afternoon, Dane" : "Evening, Dane";
+  const newRoles = DATA.jobs.filter(j => j.isNew).length;
+  const stories = {{STORY_COUNT}};
+  return [
+    `${hi}. ☕`,
+    marketLine(),
+    `${stories} stories today, about {{READ_MINUTES}} minutes of reading.`,
+    newRoles ? `${newRoles} new startup role${newRoles > 1 ? "s" : ""} this week. Scroll down to Roles.` : "No new roles this week yet. Startups post in bursts.",
+    "Last sip. Time to get after it.",
+  ];
+}
+
+cup.addEventListener("click", () => {
+  if (sips >= FULL) {                    // empty → refill
+    sips = 0;
+    barista.classList.remove("empty");
+    coffee.style.transform = "translateY(0)";
+    say("Refilled. ☕");
+    return;
+  }
+  sips++;
+  cup.classList.add("sipping");
+  setTimeout(() => cup.classList.remove("sipping"), 450);
+  coffee.style.transform = `translateY(${(sips / FULL) * 24}px)`;
+  say(lines()[sips - 1]);
+  if (sips >= FULL) setTimeout(() => { barista.classList.add("empty"); say("All out. Click to refill.", 3000); }, 4000);
+});
+
+setTimeout(() => say("Morning! Click the cup."), 1200);
+</script>
+</body>
+</html>
