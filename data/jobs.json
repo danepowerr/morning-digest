@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T10:02",
+ "updated": "2026-10-06T16:33",
  "categories": [
   "Finance & Strategy",
   "Sales & BD",
@@ -7,6 +7,34 @@
   "Internships"
  ],
  "jobs": [
+  {
+   "id": "630b02e5-72b2-4c41-8eb1-a3b696fc1076",
+   "title": "Business Development Representative (BDR) - NY",
+   "location": "New York (Remote)",
+   "url": "https://jobs.ashbyhq.com/numeric/630b02e5-72b2-4c41-8eb1-a3b696fc1076",
+   "posted": "2026-07-14T20:43:32.940+00:00",
+   "company": "Numeric",
+   "region": "Bay Area",
+   "category": "Sales & BD",
+   "experience": "New grad friendly",
+   "early": true,
+   "first_seen": "2026-10-06",
+   "appeared_since_tracking": true
+  },
+  {
+   "id": "93be0230-02b0-422c-95f2-128a430e5673",
+   "title": "Sales Development Representative",
+   "location": "San Francisco (Remote)",
+   "url": "https://jobs.ashbyhq.com/hex/93be0230-02b0-422c-95f2-128a430e5673",
+   "posted": "2025-01-24T23:42:24.613+00:00",
+   "company": "Hex",
+   "region": "Bay Area",
+   "category": "Sales & BD",
+   "experience": "No experience listed",
+   "early": true,
+   "first_seen": "2026-10-06",
+   "appeared_since_tracking": true
+  },
   {
    "id": "9ba552ad-dc0c-44ce-be05-b28c12b27018",
    "title": "Sales Development Representative",
@@ -94,7 +122,7 @@
   {
    "id": "1dd57644-88c8-42fb-82c3-05ab1bae646f",
    "title": "Business Development Representative (BDR) - SF",
-   "location": "San Francisco",
+   "location": "San Francisco (Remote)",
    "url": "https://jobs.ashbyhq.com/numeric/1dd57644-88c8-42fb-82c3-05ab1bae646f",
    "posted": "2026-08-04T20:31:28.439+00:00",
    "company": "Numeric",
@@ -153,9 +181,9 @@
    "name": "Decagon",
    "region": "Bay Area",
    "about": "AI customer service agents",
-   "open": 147,
+   "open": 145,
    "relevant": 1,
-   "change": 1
+   "change": -1
   },
   {
    "name": "Mercor",
@@ -169,25 +197,25 @@
    "name": "Baseten",
    "region": "Bay Area",
    "about": "Infrastructure for running AI models",
-   "open": 103,
+   "open": 105,
    "relevant": 1,
-   "change": 2
+   "change": 4
   },
   {
    "name": "Replit",
    "region": "Bay Area",
    "about": "AI app-building platform",
-   "open": 74,
+   "open": 70,
    "relevant": 0,
-   "change": -1
+   "change": -5
   },
   {
    "name": "Campfire",
    "region": "Bay Area",
    "about": "AI accounting platform",
-   "open": 48,
+   "open": 50,
    "relevant": 0,
-   "change": 1
+   "change": 3
   },
   {
    "name": "Reducto",
@@ -201,65 +229,73 @@
    "name": "Rillet",
    "region": "Bay Area",
    "about": "AI-native accounting ERP",
-   "open": 39,
+   "open": 40,
    "relevant": 1,
-   "change": 2
+   "change": 3
+  },
+  {
+   "name": "Hex",
+   "region": "Bay Area",
+   "about": "Collaborative data analytics",
+   "open": 38,
+   "relevant": 1,
+   "change": 35
   },
   {
    "name": "Physical Intelligence",
    "region": "Bay Area",
    "about": "AI models for robots",
-   "open": 35,
+   "open": 37,
    "relevant": 1,
-   "change": 0
+   "change": 2
   },
   {
    "name": "Cartesia",
    "region": "Bay Area",
    "about": "Real-time voice AI models",
-   "open": 30,
+   "open": 31,
    "relevant": 0,
-   "change": 0
+   "change": 1
   },
   {
    "name": "Vapi",
    "region": "Bay Area",
    "about": "Voice AI agent platform",
-   "open": 29,
+   "open": 26,
    "relevant": 0,
-   "change": -1
+   "change": -4
   },
   {
    "name": "Workstream",
    "region": "Utah",
    "about": "Hiring and HR for hourly workforces",
-   "open": 27,
+   "open": 25,
    "relevant": 0,
-   "change": 1
+   "change": -1
   },
   {
    "name": "Numeric",
    "region": "Bay Area",
    "about": "AI for the accounting close",
    "open": 25,
-   "relevant": 1,
+   "relevant": 2,
+   "change": 0
+  },
+  {
+   "name": "Sesame",
+   "region": "Bay Area",
+   "about": "Conversational voice AI",
+   "open": 25,
+   "relevant": 0,
    "change": 0
   },
   {
    "name": "Gamma",
    "region": "Bay Area",
    "about": "AI presentations and docs",
-   "open": 25,
-   "relevant": 0,
-   "change": -1
-  },
-  {
-   "name": "Sesame",
-   "region": "Bay Area",
-   "about": "Conversational voice AI",
    "open": 24,
    "relevant": 0,
-   "change": -1
+   "change": -2
   },
   {
    "name": "Pylon",
@@ -268,6 +304,22 @@
    "open": 18,
    "relevant": 0,
    "change": 0
+  },
+  {
+   "name": "TaxBit",
+   "region": "Utah",
+   "about": "Crypto tax and accounting software",
+   "open": 15,
+   "relevant": 0,
+   "change": 1
+  },
+  {
+   "name": "Pika",
+   "region": "Bay Area",
+   "about": "AI video generation",
+   "open": 15,
+   "relevant": 0,
+   "change": 1
   },
   {
    "name": "Redo",
@@ -286,28 +338,20 @@
    "change": 0
   },
   {
-   "name": "TaxBit",
-   "region": "Utah",
-   "about": "Crypto tax and accounting software",
-   "open": 14,
-   "relevant": 0,
-   "change": 0
-  },
-  {
-   "name": "Pika",
+   "name": "Mintlify",
    "region": "Bay Area",
-   "about": "AI video generation",
-   "open": 14,
+   "about": "Developer documentation platform",
+   "open": 13,
    "relevant": 0,
-   "change": 0
+   "change": -1
   },
   {
    "name": "Neighbor",
    "region": "Utah",
    "about": "Peer-to-peer storage marketplace",
-   "open": 13,
+   "open": 12,
    "relevant": 1,
-   "change": 1
+   "change": 0
   },
   {
    "name": "Finch",
@@ -316,14 +360,6 @@
    "open": 12,
    "relevant": 0,
    "change": 0
-  },
-  {
-   "name": "Mintlify",
-   "region": "Bay Area",
-   "about": "Developer documentation platform",
-   "open": 12,
-   "relevant": 0,
-   "change": -2
   },
   {
    "name": "Canopy",
@@ -382,14 +418,6 @@
    "change": 1
   },
   {
-   "name": "Brevium",
-   "region": "Utah",
-   "about": "Patient reactivation software for clinics",
-   "open": 4,
-   "relevant": 0,
-   "change": 0
-  },
-  {
    "name": "Route",
    "region": "Utah",
    "about": "Package tracking and protection for online stores",
@@ -414,12 +442,12 @@
    "change": 0
   },
   {
-   "name": "Hex",
-   "region": "Bay Area",
-   "about": "Collaborative data analytics",
+   "name": "Brevium",
+   "region": "Utah",
+   "about": "Patient reactivation software for clinics",
    "open": 3,
    "relevant": 0,
-   "change": 0
+   "change": -1
   },
   {
    "name": "YouScience",

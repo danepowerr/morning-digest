@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-06",
+ "big_picture": "Money keeps chasing AI hardware and frontier models at eye-popping valuations, from Etched fielding $40B+ offers to DeepSeek's $12B-plus round. At the same time, Anthropic's biggest customers are pulling back as it turns from supplier into competitor \u2014 a reminder that hypergrowth invites pushback.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Microsoft and Meta cut back on Claude as Anthropic becomes a rival",
+    "summary": "Two of Anthropic's biggest enterprise customers are sharply reducing internal use of Claude: Microsoft cut spending by more than a third and dropped its cloud division's monthly per-employee budget from $100,000 to about $10,000, steering staff to GitHub Copilot and OpenAI models. At Meta, Claude Code users fell from about 60,000 to 30,000 as it pushes its own coding tools, after spending over $105 million on Claude Code in a single 28-day stretch. The pullback shows how Anthropic's fast growth into products like Claude Cowork is turning partners into competitors.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/meta-and-microsoft-pull-back-from-claude-as-anthropic-transforms-from-partner-into-competitor/"
+   },
+   {
+    "headline": "DeepSeek nears $12 billion-plus raise backed by CATL and Tencent, eyes 2027 IPO",
+    "summary": "Chinese AI startup DeepSeek is close to raising at least $12 billion, and possibly up to $15 billion, well above its original target of about $7.5 billion at a roughly $75 billion valuation, Bloomberg reports. Battery maker CATL and Tencent are writing the largest checks, drawn by the cost and performance of its V4-Flash model. After the round, DeepSeek plans to restructure for an IPO in early 2027; it raised its first outside round in June at about $7.4 billion and a valuation above $50 billion.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/catl-and-tencent-back-deepseeks-ballooning-funding-round-as-the-ai-startup-eyes-a-2027-ipo/"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "AI chip startup Etched weighs offers at $40 billion-plus valuation",
+    "summary": "Just months after raising $700 million at a $21 billion valuation in a round led by Jane Street, AI chip startup Etched is reviewing bids valuing it at $40 billion to $50 billion, sources told TechCrunch. The four-year-old, 400-person company says it has $1 billion in customer orders and claims its chips process tokens faster and cheaper than Nvidia's. Talks are early and terms could change; Etched has already raised $300 million at $10.3 billion in July and $700 million in September.",
+    "source": "TechCrunch Startups",
+    "link": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"
+   },
+   {
+    "headline": "Type One Energy raises $200M Series B to build fusion plant by 2034",
+    "summary": "Knoxville, Tennessee-based fusion startup Type One Energy raised a $200 million Series B led by Breakthrough Energy Ventures and Clutterbuck Capital, with Lowercarbon Capital, Siemens Energy Ventures, and SiteGround Capital joining. The CEO says it should cover about half the cost of a 400-megawatt commercial plant targeted for 2034. Type One keeps costs down by designing the plant and relying on outside suppliers to build components, after previously raising $82.5 million in an extended Series A.",
+    "source": "TechCrunch Startups",
+    "link": "https://techcrunch.com/2026/10/06/type-one-energy-raised-200m-to-build-a-fusion-power-plant-by-2034/"
+   }
+  ],
+  "Utah Tech": [
+   {
+    "headline": "Lindon's Fortem Technologies closes $50M Series B led by Lockheed Martin",
+    "summary": "Lindon-based counter-drone company Fortem Technologies closed a $50 million Series B led by Lockheed Martin, which committed $25 million in an earlier tranche, with Unusual Machines also participating. The money will expand manufacturing in Lindon and global deployment of its radar, AI software, and DroneHunter interceptor drones. Fortem recently won a DHS contract to protect 2026 FIFA World Cup venues and a spot as a prime contractor on a five-year DHS counter-drone contract with a starting ceiling of about $1.01 billion.",
+    "source": "Utah VC",
+    "link": "https://utah.vc/p/fortem-technologies-closes-50m"
+   },
+   {
+    "headline": "Maxwell Power moves HQ to Salt Lake City and lands $800M project commitment",
+    "summary": "Distributed solar and battery-storage financier Maxwell Power moved its headquarters from San Diego to Salt Lake City and secured another $800 million commitment from Fairtide Partners. The money is for buying solar and battery projects Maxwell develops, not a direct equity investment, and brings Fairtide's total commitment to $1.8 billion. Maxwell says it has invested more than $1.5 billion in customer energy projects since 2018, though it hasn't said how many jobs the move brings to Utah.",
+    "source": "Utah Money Watch",
+    "link": "https://www.utahmoneywatch.com/maxwell-power-moves-its-headquarters-to-utah-from-california-and-secures-another-800-million-for-solar-and-battery-projects/"
+   }
+  ]
+ }
+}
