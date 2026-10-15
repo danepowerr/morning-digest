@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-15",
+ "big_picture": "AI money is getting real scrutiny: Anthropic showed IPO investors $16.8 billion in quarterly revenue and a profit, but slowing growth may pull its valuation below $1.5 trillion. Further down the ladder, investors are still writing checks for AI startups with real revenue, and Utah counter-drone maker Fortem keeps landing big defense partners.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Anthropic posts $16.8B quarter, but slowing growth may trim IPO valuation",
+    "summary": "Anthropic told prospective IPO investors it brought in $16.8 billion in third-quarter revenue, up about 45% from Q2 but far below Q2's 140%+ jump, with an 11% adjusted operating margin and positive cash flow. Some investors now expect bankers to set the valuation under $1.5 trillion, versus $965 billion privately in May and talk of $2 trillion. The IPO is planned for November, before Thanksgiving, and will be a major test of public-market appetite for AI.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo/"
+   },
+   {
+    "headline": "OpenAI expects new models by year-end, but its next flagship needs safety work",
+    "summary": "OpenAI employees say one or two new models will likely ship before year's end, but the major flagship upgrade still needs alignment work and better testing infrastructure, according to The Information. The model uses \"looped\" transformers, which boost math and coding performance but make the model's reasoning harder for safety reviewers to read. OpenAI has also shifted roughly 10% of its total compute toward safety, capacity that would cost billions a year to rent.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work/"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "Scimplify raises $25M to offer alternatives to Chinese specialty chemicals",
+    "summary": "Bengaluru-based Scimplify raised $25 million in a round led by Hitachi Ventures, reportedly valuing it at $250 million, up from $150 million after its March 2025 Series B. The startup uses AI to speed up how specialty chemicals and critical materials get made, and its annualized revenue run rate has tripled to about $200 million, with U.S. run rate up sixfold to roughly $60 million. It plans to spend about $7.5 million expanding into the U.S. and is targeting a $400 million run rate next year.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/"
+   },
+   {
+    "headline": "Zenzap raises $44M to replace WhatsApp for frontline workplace chat",
+    "summary": "Zenzap, an AI-powered work messenger aimed at non-desk workers in industries like fast food, hospitality, and construction, raised $44 million from investors including Bessemer and Lightspeed. Clients include FedEx, Dollar General, Taco Bell, and Starbucks, and paid plans start at $51 a month for up to 20 users. The 50-person company is betting workers want a separate, IT-approved alternative to personal chat apps as AI agents come to work.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/"
+   }
+  ],
+  "Utah Tech": [
+   {
+    "headline": "Lindon's Fortem expands counter-drone partnership with European weapons maker MBDA",
+    "summary": "Fortem Technologies is expanding its partnership with MBDA, which will offer Fortem's DroneHunter net-capture interceptor plus a jointly built kinetic interceptor called FireThorn inside European and allied air-defense networks. It builds on Fortem's spot as the only small business among seven prime contractors on a DHS counter-drone contract with a $1.011 billion ceiling, an $18 million Army contract, and a $25 million Lockheed Martin investment announced in April. Fortem is also expanding production at its Lindon headquarters.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/fortem-mbda-partnership/"
+   },
+   {
+    "headline": "Salt Lake's MasterControl adds 90 customers under CEO David Edwards",
+    "summary": "MasterControl, which makes quality and manufacturing software for life sciences companies, added 90 customers so far in 2026 and grew annual recurring revenue for its Manufacturing Excellence product about 20% over the past year. The company now serves more than 1,200 companies, and new customers include Revlon, Pharmavite, and Bespak; it also renewed its contract with the FDA. CEO David Edwards says his focus is executing on current commitments rather than chasing new products.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/mastercontrol-growth-david-edwards-masters-summit-2026/"
+   }
+  ]
+ }
+}

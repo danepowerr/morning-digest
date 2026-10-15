@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T16:33",
+ "updated": "2026-10-15T16:39",
  "categories": [
   "Finance & Strategy",
   "Sales & BD",
@@ -7,20 +7,6 @@
   "Internships"
  ],
  "jobs": [
-  {
-   "id": "630b02e5-72b2-4c41-8eb1-a3b696fc1076",
-   "title": "Business Development Representative (BDR) - NY",
-   "location": "New York (Remote)",
-   "url": "https://jobs.ashbyhq.com/numeric/630b02e5-72b2-4c41-8eb1-a3b696fc1076",
-   "posted": "2026-07-14T20:43:32.940+00:00",
-   "company": "Numeric",
-   "region": "Bay Area",
-   "category": "Sales & BD",
-   "experience": "New grad friendly",
-   "early": true,
-   "first_seen": "2026-10-06",
-   "appeared_since_tracking": true
-  },
   {
    "id": "93be0230-02b0-422c-95f2-128a430e5673",
    "title": "Sales Development Representative",
@@ -48,20 +34,6 @@
    "early": true,
    "first_seen": "2026-09-30",
    "appeared_since_tracking": true
-  },
-  {
-   "id": "212694",
-   "title": "Product Operations, Reverse Logistics",
-   "location": "Draper, UT",
-   "url": "https://redo.hirehive.com/product-operations-reverse-logistics-draper-cAzqJo",
-   "posted": "2026-09-24T18:48:18+00:00",
-   "company": "Redo",
-   "region": "Utah",
-   "category": "Product & Analytics",
-   "experience": "New grad friendly",
-   "early": true,
-   "first_seen": "2026-09-27",
-   "appeared_since_tracking": false
   },
   {
    "id": "aed35522-81dd-466f-aa98-6dbe8fda413a",
@@ -120,20 +92,6 @@
    "appeared_since_tracking": false
   },
   {
-   "id": "1dd57644-88c8-42fb-82c3-05ab1bae646f",
-   "title": "Business Development Representative (BDR) - SF",
-   "location": "San Francisco (Remote)",
-   "url": "https://jobs.ashbyhq.com/numeric/1dd57644-88c8-42fb-82c3-05ab1bae646f",
-   "posted": "2026-08-04T20:31:28.439+00:00",
-   "company": "Numeric",
-   "region": "Bay Area",
-   "category": "Sales & BD",
-   "experience": "New grad friendly",
-   "early": true,
-   "first_seen": "2026-09-27",
-   "appeared_since_tracking": false
-  },
-  {
    "id": "303c50a4-5f32-4d4c-86fc-2baeb9d9a3ac",
    "title": "Marketing Operations Intern (Part time)",
    "location": "Lehi, UT",
@@ -181,89 +139,81 @@
    "name": "Decagon",
    "region": "Bay Area",
    "about": "AI customer service agents",
-   "open": 145,
+   "open": 141,
    "relevant": 1,
-   "change": -1
+   "change": -5
   },
   {
    "name": "Mercor",
    "region": "Bay Area",
    "about": "AI-powered hiring and expert marketplace",
-   "open": 114,
+   "open": 112,
    "relevant": 0,
-   "change": 0
+   "change": -2
   },
   {
    "name": "Baseten",
    "region": "Bay Area",
    "about": "Infrastructure for running AI models",
-   "open": 105,
+   "open": 106,
    "relevant": 1,
-   "change": 4
+   "change": 5
   },
   {
    "name": "Replit",
    "region": "Bay Area",
    "about": "AI app-building platform",
-   "open": 70,
+   "open": 66,
    "relevant": 0,
-   "change": -5
+   "change": -9
   },
   {
    "name": "Campfire",
    "region": "Bay Area",
    "about": "AI accounting platform",
-   "open": 50,
+   "open": 52,
    "relevant": 0,
-   "change": 3
-  },
-  {
-   "name": "Reducto",
-   "region": "Bay Area",
-   "about": "Document parsing for AI",
-   "open": 43,
-   "relevant": 0,
-   "change": 0
+   "change": 5
   },
   {
    "name": "Rillet",
    "region": "Bay Area",
    "about": "AI-native accounting ERP",
-   "open": 40,
+   "open": 42,
    "relevant": 1,
-   "change": 3
-  },
-  {
-   "name": "Hex",
-   "region": "Bay Area",
-   "about": "Collaborative data analytics",
-   "open": 38,
-   "relevant": 1,
-   "change": 35
+   "change": 5
   },
   {
    "name": "Physical Intelligence",
    "region": "Bay Area",
    "about": "AI models for robots",
-   "open": 37,
+   "open": 41,
    "relevant": 1,
-   "change": 2
+   "change": 6
+  },
+  {
+   "name": "Hex",
+   "region": "Bay Area",
+   "about": "Collaborative data analytics",
+   "open": 40,
+   "relevant": 1,
+   "change": 37
+  },
+  {
+   "name": "Reducto",
+   "region": "Bay Area",
+   "about": "Document parsing for AI",
+   "open": 40,
+   "relevant": 0,
+   "change": -3
   },
   {
    "name": "Cartesia",
    "region": "Bay Area",
    "about": "Real-time voice AI models",
-   "open": 31,
+   "open": 28,
    "relevant": 0,
-   "change": 1
-  },
-  {
-   "name": "Vapi",
-   "region": "Bay Area",
-   "about": "Voice AI agent platform",
-   "open": 26,
-   "relevant": 0,
-   "change": -4
+   "change": -2
   },
   {
    "name": "Workstream",
@@ -274,14 +224,6 @@
    "change": -1
   },
   {
-   "name": "Numeric",
-   "region": "Bay Area",
-   "about": "AI for the accounting close",
-   "open": 25,
-   "relevant": 2,
-   "change": 0
-  },
-  {
    "name": "Sesame",
    "region": "Bay Area",
    "about": "Conversational voice AI",
@@ -290,12 +232,28 @@
    "change": 0
   },
   {
+   "name": "Numeric",
+   "region": "Bay Area",
+   "about": "AI for the accounting close",
+   "open": 24,
+   "relevant": 0,
+   "change": -1
+  },
+  {
+   "name": "Vapi",
+   "region": "Bay Area",
+   "about": "Voice AI agent platform",
+   "open": 23,
+   "relevant": 0,
+   "change": -7
+  },
+  {
    "name": "Gamma",
    "region": "Bay Area",
    "about": "AI presentations and docs",
-   "open": 24,
+   "open": 22,
    "relevant": 0,
-   "change": -2
+   "change": -4
   },
   {
    "name": "Pylon",
@@ -309,6 +267,22 @@
    "name": "TaxBit",
    "region": "Utah",
    "about": "Crypto tax and accounting software",
+   "open": 17,
+   "relevant": 0,
+   "change": 3
+  },
+  {
+   "name": "Redo",
+   "region": "Utah",
+   "about": "Returns and post-purchase software for online stores",
+   "open": 15,
+   "relevant": 1,
+   "change": 1
+  },
+  {
+   "name": "Mintlify",
+   "region": "Bay Area",
+   "about": "Developer documentation platform",
    "open": 15,
    "relevant": 0,
    "change": 1
@@ -322,35 +296,11 @@
    "change": 1
   },
   {
-   "name": "Redo",
-   "region": "Utah",
-   "about": "Returns and post-purchase software for online stores",
-   "open": 14,
-   "relevant": 2,
-   "change": 0
-  },
-  {
    "name": "Databento",
    "region": "Utah",
    "about": "Market data API for traders",
    "open": 14,
    "relevant": 0,
-   "change": 0
-  },
-  {
-   "name": "Mintlify",
-   "region": "Bay Area",
-   "about": "Developer documentation platform",
-   "open": 13,
-   "relevant": 0,
-   "change": -1
-  },
-  {
-   "name": "Neighbor",
-   "region": "Utah",
-   "about": "Peer-to-peer storage marketplace",
-   "open": 12,
-   "relevant": 1,
    "change": 0
   },
   {
@@ -362,12 +312,12 @@
    "change": 0
   },
   {
-   "name": "Canopy",
+   "name": "Neighbor",
    "region": "Utah",
-   "about": "Practice management for accounting firms",
-   "open": 10,
-   "relevant": 0,
-   "change": -2
+   "about": "Peer-to-peer storage marketplace",
+   "open": 11,
+   "relevant": 1,
+   "change": -1
   },
   {
    "name": "Unify",
@@ -378,14 +328,6 @@
    "change": 2
   },
   {
-   "name": "Jump",
-   "region": "Utah",
-   "about": "AI assistant for financial advisors",
-   "open": 9,
-   "relevant": 1,
-   "change": -2
-  },
-  {
    "name": "Browserbase",
    "region": "Bay Area",
    "about": "Web browsers for AI agents",
@@ -394,20 +336,36 @@
    "change": 0
   },
   {
+   "name": "Jump",
+   "region": "Utah",
+   "about": "AI assistant for financial advisors",
+   "open": 8,
+   "relevant": 1,
+   "change": -3
+  },
+  {
+   "name": "Canopy",
+   "region": "Utah",
+   "about": "Practice management for accounting firms",
+   "open": 8,
+   "relevant": 0,
+   "change": -4
+  },
+  {
    "name": "Enzo Health",
    "region": "Utah",
    "about": "AI for home health agencies",
-   "open": 5,
-   "relevant": 0,
-   "change": -2
-  },
-  {
-   "name": "Gabb",
-   "region": "Utah",
-   "about": "Safe phones and watches for kids",
-   "open": 5,
+   "open": 7,
    "relevant": 0,
    "change": 0
+  },
+  {
+   "name": "Route",
+   "region": "Utah",
+   "about": "Package tracking and protection for online stores",
+   "open": 5,
+   "relevant": 0,
+   "change": 1
   },
   {
    "name": "Tava Health",
@@ -416,14 +374,6 @@
    "open": 4,
    "relevant": 0,
    "change": 1
-  },
-  {
-   "name": "Route",
-   "region": "Utah",
-   "about": "Package tracking and protection for online stores",
-   "open": 4,
-   "relevant": 0,
-   "change": 0
   },
   {
    "name": "Artisan",
@@ -448,6 +398,14 @@
    "open": 3,
    "relevant": 0,
    "change": -1
+  },
+  {
+   "name": "Gabb",
+   "region": "Utah",
+   "about": "Safe phones and watches for kids",
+   "open": 3,
+   "relevant": 0,
+   "change": -2
   },
   {
    "name": "YouScience",
