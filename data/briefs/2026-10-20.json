@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-20",
+ "big_picture": "Money keeps pouring into AI at every level, from Anthropic's reported second $45 billion compute deal with Nscale to two startups hitting unicorn-plus valuations on fresh rounds. And as Anthropic gears up for a possible $2 trillion IPO, it's also setting aside a slice of itself for the workers AI might displace.",
+ "sections": {
+  "AI Startups": [
+   {
+    "headline": "Anthropic reportedly nearing a second $45 billion compute deal with Nscale",
+    "summary": "Bloomberg reports Anthropic and AI infrastructure provider Nscale are close to announcing another $45 billion compute deal, just over a month after their first one, though talks are ongoing and details could change. Both companies are pursuing IPOs: Anthropic is expected to go public this year, while Nscale is reportedly facing investor pushback on its proposed $30 billion valuation.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/"
+   },
+   {
+    "headline": "Anthropic plans 5% equity fund for workers threatened by AI",
+    "summary": "Anthropic wants to put 5% of its shares into a new 'Anthropic Public Benefit Fund' that could make large nonprofit donations or direct payments to workers at risk of losing jobs to AI, with up to 2% more shares for every 50% the valuation rises above a set baseline. The fund is a company-owned LLC, so Anthropic keeps control, and it comes as the company prepares an IPO that could raise up to $100 billion at roughly a $2 trillion valuation. Elon Musk countered by pledging one SpaceX share (about $146) to each of roughly 72 million U.S. children next year.",
+    "source": "The Decoder",
+    "link": "https://the-decoder.com/anthropic-plans-fund-for-workers-threatened-by-ai-musk-counters-with-spacex-shares-for-children/"
+   }
+  ],
+  "Fast-Growing Startups": [
+   {
+    "headline": "AI assistant startup Town becomes a unicorn four months after launch",
+    "summary": "San Francisco-based Town raised a $108 million Series B co-led by Forerunner Ventures and Menlo Ventures, reaching a $1 billion-plus valuation just four months after launching publicly. Founded by former Plaid CTO Jean-Denis Greze, Town gives each employee an AI assistant (a 'Townie') that connects to email, calendars and work systems, and it says it hit millions in annual recurring revenue within weeks. It has now raised at least $160 million, including a $55 million Series A in June.",
+    "source": "TechCrunch Startups",
+    "link": "https://techcrunch.com/2026/10/19/ai-assistant-startup-town-nabs-unicorn-valuation-four-months-after-launch/"
+   },
+   {
+    "headline": "Robotics startup Eka raises $150M Series A at a $1.45B valuation",
+    "summary": "Eka Robotics, founded by MIT professor Pulkit Agrawal and former Google DeepMind researcher Tuomas Haarnoja, closed a $150 million Series A led by a16z and F-Prime at a $1.45 billion post-money valuation. Its force-sensing robot arm can pick up about 1,500 objects an hour versus roughly 600 for a human, succeeding more than 95% of the time, and veteran roboticists say the demos are unusually impressive.",
+    "source": "TechCrunch AI",
+    "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
+   }
+  ],
+  "Utah Tech": [
+   {
+    "headline": "Draper's Savory Fund closes $201.5 million restaurant-focused Fund III",
+    "summary": "Draper-based private equity firm Savory Fund closed its third fund at $201.5 million, beating its $200 million target and topping its first two funds (about $100 million each) combined. It has already deployed about $70.5 million across four restaurant brands, including Utah's Bonrue Bakery and Zao Asian Grill, and now manages more than $750 million across 13 brands. Savory previously grew Swig from 17 to 46 locations and Mo' Bettahs from 6 to 56 before selling majority stakes.",
+    "source": "Utah Money Watch",
+    "link": "https://www.utahmoneywatch.com/utahs-savory-fund-closes-201-5-million-fund-iii-more-than-doubling-the-size-of-its-previous-funds-combined/"
+   },
+   {
+    "headline": "South Jordan's DRYOUT tech lands on TIME's Best Inventions of 2026",
+    "summary": "Urban Armor Gear's Phone Recovery Pouch, built on South Jordan-based DRYOUT's moisture-removal material, was named to TIME's Best Inventions of 2026. DRYOUT's reusable material pulls moisture out of water-damaged electronics and traps it in an absorbent core, and the company is expanding brand partnerships after an earlier deal with Pelican Products.",
+    "source": "TechBuzz News",
+    "link": "https://www.techbuzznews.com/uag-phone-recovery-pouch-featuring-utahs-dryout-named-to-times-best-inventions-of-2026/"
+   }
+  ]
+ }
+}

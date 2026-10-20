@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T16:39",
+ "updated": "2026-10-20T16:42",
  "categories": [
   "Finance & Strategy",
   "Sales & BD",
@@ -7,6 +7,20 @@
   "Internships"
  ],
  "jobs": [
+  {
+   "id": "7ed377a8-69c3-4882-8b91-10ff6c891c50",
+   "title": "FP&A Intern (Summer 2027)",
+   "location": "Lehi, UT",
+   "url": "https://jobs.lever.co/neighbor/7ed377a8-69c3-4882-8b91-10ff6c891c50",
+   "posted": "2026-10-15T19:27:25.059000+00:00",
+   "company": "Neighbor",
+   "region": "Utah",
+   "category": "Finance & Strategy",
+   "experience": "New grad friendly",
+   "early": true,
+   "first_seen": "2026-10-20",
+   "appeared_since_tracking": true
+  },
   {
    "id": "93be0230-02b0-422c-95f2-128a430e5673",
    "title": "Sales Development Representative",
@@ -139,65 +153,65 @@
    "name": "Decagon",
    "region": "Bay Area",
    "about": "AI customer service agents",
-   "open": 141,
+   "open": 135,
    "relevant": 1,
-   "change": -5
+   "change": -11
   },
   {
    "name": "Mercor",
    "region": "Bay Area",
    "about": "AI-powered hiring and expert marketplace",
-   "open": 112,
+   "open": 111,
    "relevant": 0,
-   "change": -2
+   "change": -3
   },
   {
    "name": "Baseten",
    "region": "Bay Area",
    "about": "Infrastructure for running AI models",
-   "open": 106,
+   "open": 104,
    "relevant": 1,
-   "change": 5
+   "change": 3
   },
   {
    "name": "Replit",
    "region": "Bay Area",
    "about": "AI app-building platform",
-   "open": 66,
+   "open": 59,
    "relevant": 0,
-   "change": -9
+   "change": -16
   },
   {
    "name": "Campfire",
    "region": "Bay Area",
    "about": "AI accounting platform",
-   "open": 52,
+   "open": 51,
    "relevant": 0,
-   "change": 5
-  },
-  {
-   "name": "Rillet",
-   "region": "Bay Area",
-   "about": "AI-native accounting ERP",
-   "open": 42,
-   "relevant": 1,
-   "change": 5
+   "change": 4
   },
   {
    "name": "Physical Intelligence",
    "region": "Bay Area",
    "about": "AI models for robots",
-   "open": 41,
+   "open": 44,
    "relevant": 1,
-   "change": 6
+   "change": 9
   },
   {
    "name": "Hex",
    "region": "Bay Area",
    "about": "Collaborative data analytics",
+   "open": 42,
+   "relevant": 1,
+   "change": 39
+  },
+  {
+   "name": "Rillet",
+   "region": "Bay Area",
+   "about": "AI-native accounting ERP",
    "open": 40,
    "relevant": 1,
-   "change": 37
+   "change": 3
   },
   {
    "name": "Reducto",
@@ -211,9 +225,9 @@
    "name": "Cartesia",
    "region": "Bay Area",
    "about": "Real-time voice AI models",
-   "open": 28,
+   "open": 26,
    "relevant": 0,
-   "change": -2
+   "change": -4
   },
   {
    "name": "Workstream",
@@ -240,20 +254,12 @@
    "change": -1
   },
   {
-   "name": "Vapi",
-   "region": "Bay Area",
-   "about": "Voice AI agent platform",
-   "open": 23,
-   "relevant": 0,
-   "change": -7
-  },
-  {
    "name": "Gamma",
    "region": "Bay Area",
    "about": "AI presentations and docs",
-   "open": 22,
+   "open": 21,
    "relevant": 0,
-   "change": -4
+   "change": -5
   },
   {
    "name": "Pylon",
@@ -267,9 +273,9 @@
    "name": "TaxBit",
    "region": "Utah",
    "about": "Crypto tax and accounting software",
-   "open": 17,
+   "open": 16,
    "relevant": 0,
-   "change": 3
+   "change": 2
   },
   {
    "name": "Redo",
@@ -277,6 +283,14 @@
    "about": "Returns and post-purchase software for online stores",
    "open": 15,
    "relevant": 1,
+   "change": 1
+  },
+  {
+   "name": "Databento",
+   "region": "Utah",
+   "about": "Market data API for traders",
+   "open": 15,
+   "relevant": 0,
    "change": 1
   },
   {
@@ -296,12 +310,12 @@
    "change": 1
   },
   {
-   "name": "Databento",
+   "name": "Neighbor",
    "region": "Utah",
-   "about": "Market data API for traders",
-   "open": 14,
-   "relevant": 0,
-   "change": 0
+   "about": "Peer-to-peer storage marketplace",
+   "open": 13,
+   "relevant": 2,
+   "change": 1
   },
   {
    "name": "Finch",
@@ -312,12 +326,12 @@
    "change": 0
   },
   {
-   "name": "Neighbor",
+   "name": "Canopy",
    "region": "Utah",
-   "about": "Peer-to-peer storage marketplace",
-   "open": 11,
-   "relevant": 1,
-   "change": -1
+   "about": "Practice management for accounting firms",
+   "open": 10,
+   "relevant": 0,
+   "change": -2
   },
   {
    "name": "Unify",
@@ -344,12 +358,12 @@
    "change": -3
   },
   {
-   "name": "Canopy",
-   "region": "Utah",
-   "about": "Practice management for accounting firms",
+   "name": "Vapi",
+   "region": "Bay Area",
+   "about": "Voice AI agent platform",
    "open": 8,
    "relevant": 0,
-   "change": -4
+   "change": -22
   },
   {
    "name": "Enzo Health",
@@ -360,20 +374,20 @@
    "change": 0
   },
   {
-   "name": "Route",
-   "region": "Utah",
-   "about": "Package tracking and protection for online stores",
-   "open": 5,
-   "relevant": 0,
-   "change": 1
-  },
-  {
    "name": "Tava Health",
    "region": "Utah",
    "about": "Mental health care for employers",
    "open": 4,
    "relevant": 0,
    "change": 1
+  },
+  {
+   "name": "Route",
+   "region": "Utah",
+   "about": "Package tracking and protection for online stores",
+   "open": 4,
+   "relevant": 0,
+   "change": 0
   },
   {
    "name": "Artisan",
@@ -400,14 +414,6 @@
    "change": -1
   },
   {
-   "name": "Gabb",
-   "region": "Utah",
-   "about": "Safe phones and watches for kids",
-   "open": 3,
-   "relevant": 0,
-   "change": -2
-  },
-  {
    "name": "YouScience",
    "region": "Utah",
    "about": "Career aptitude platform for students",
@@ -424,12 +430,12 @@
    "change": -1
   },
   {
-   "name": "SponsorCX",
+   "name": "Gabb",
    "region": "Utah",
-   "about": "Sponsorship CRM for sports teams",
+   "about": "Safe phones and watches for kids",
    "open": 1,
    "relevant": 0,
-   "change": 0
+   "change": -4
   },
   {
    "name": "Zanskar",
@@ -454,6 +460,14 @@
    "open": 0,
    "relevant": 0,
    "change": 0
+  },
+  {
+   "name": "SponsorCX",
+   "region": "Utah",
+   "about": "Sponsorship CRM for sports teams",
+   "open": 0,
+   "relevant": 0,
+   "change": -1
   },
   {
    "name": "SchoolAI",
